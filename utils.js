@@ -3,7 +3,7 @@ const getRandomElement = (arr) => {
   return arr[Math.floor(Math.random() * arr.length)];
 };
 
-function checkTheAuthor(arr, item) {
+const checkTheAuthor = (arr, item) => {
   const authorQuotes = [];
   for (i = 0; i < arr.length; i++) {
     if (arr[i].person === item) {
@@ -11,7 +11,7 @@ function checkTheAuthor(arr, item) {
     }
   }
   return authorQuotes;
-}
+};
 
 module.exports = {
   getRandomElement,
