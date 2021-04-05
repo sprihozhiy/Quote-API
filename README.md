@@ -1,6 +1,6 @@
 # Full Stack Codecademy Projects
 
-## Objective
+Objective
 
 ## BUILD A BACK-END WITH NODE/EXPRESS.JS
 
@@ -43,9 +43,11 @@ Once you start up the server with node server.js, navigate to localhost:4001 in 
 
 4.  Your API should have a GET /api/quotes/random route. This route should send back a random quote from the quotes data. The response body should have the following shape:
 
+```
 {
 quote: {/_ quote object _/}
 }
+```
 
 5. Your API should have a GET /api/quotes route. This route should return all quotes from the data if the request has no query params.
 
@@ -53,17 +55,21 @@ If there is a query string with a person attribute, the route should return all 
 
 The response body should have the following shape for all GET /api/quotes requests:
 
+```
 {
 quotes: [ /* Array of requested quotes */ ]
 }
+```
 
 6. Your API should have a POST /api/quotes route for adding new quotes to the data. New quotes will be passed in a query string with two properties: quote with the quote text itself, and person with the person who is credited with saying the quote.
 
 This route should verify that both properties exist in the request query string and send a 400 response if it does not. If all is well, this route handler should add the new quote object to the data array and send back a response with the following shape:
 
+```
 {
 quote: {/_ new quote object _/}
 }
+```
 
 7. Great work! Visit our forums to compare your project to our sample solution code. You can also learn how to host your own solution on GitHub so you can share it with other learners! Your solution might look different from ours, and that’s okay! There are multiple ways to solve these projects, and you’ll learn more by seeing others’ code.
 
